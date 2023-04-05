@@ -1,0 +1,53 @@
+1) What is a class?
+Ans) A class is an user-defined blueprint which consists of objects of different states and behaviours. 
+    - It also consists of functions and methods which are applied on these objects.
+    - A class binds methods and data together into a single unit.
+    - In Python, class is created using the class Keyword.
+    - Classes does not take any memory space when created.
+ __________________________________________________________________________________________
+2) What is an object?
+Ans) - An object can be called as a real world entity.
+     - It is called as the instance of a class.
+     - Objects takes memory space when created.
+     - Different objects have differents attributes, behaviours and states.
+ __________________________________________________________________________________________
+    
+3) What is a constructor?
+Ans) A Constructor is a special type of method that has the same name of that of class. It is used to initialize
+   objects of that class.
+   - In Python we use __init__(self) as the name of the constructor.
+   - The main purpose is to initiazle the variables of thae class.
+   - The constructor is automatically executed when the object is created.
+__________________________________________________________________________________________
+   
+4) What is a method?
+And) Methods are the functions that perform specific actions on the object.
+   - Methods should be called explicitly using an object name of that class
+__________________________________________________________________________________________
+   
+5) How many types of variables are there in OOP approach?
+Ans)  There are mainly 3 types:
+     - Instance variable:
+               The value of the variable changes from object to object
+               Variables that are defined inside the __init__ 
+     - Static variable
+               The value of the variable is not changing from object to object
+               It is accessed by using the name of the class
+               Also called class variable
+               
+          eg:
+            class Emp:
+               cName='TCS'
+               def __init__(self, no, name):
+                  self.no=no
+                  self.name=name
+            
+            e1=Emp(1,'hi')
+            print(e1.no, e1.name, Emp.cName)
+            
+        
+     - Local variable.
+ __________________________________________________________________________________________
+
+6) What is the purpose of an Instance, and how to access it?
+7) What is the purpose of static variable?
