@@ -1,40 +1,44 @@
+				OOPS Fundamentals
+
 1) What is a class?
 Ans) A class is an user-defined blueprint which consists of objects of different states and behaviours. 
-    - It also consists of functions and methods which are applied on these objects.
-    - A class binds methods and data together into a single unit.
-    - In Python, class is created using the class Keyword.
-    - Classes does not take any memory space when created.
+ - It also consists of functions and methods which are applied on these objects.
+ - A class binds methods and data together into a single unit.
+ - In Python, class is created using the class Keyword.
+ - Classes does not take any memory space when created.
  __________________________________________________________________________________________
 2) What is an object?
 Ans) - An object can be called as a real world entity.
-     - It is called as the instance of a class.
-     - Objects takes memory space when created.
-     - Different objects have differents attributes, behaviours and states.
+ - It is called as the instance of a class.
+ - Objects takes memory space when created.
+ - Different objects have differents attributes, behaviours and states.
  __________________________________________________________________________________________
-    
-3) What is a constructor?
+  What is a constructor?
 Ans) A Constructor is a special type of method that has the same name of that of class. It is used to initialize
-   objects of that class.
-   - In Python we use __init__(self) as the name of the constructor.
-   - The main purpose is to initiazle the variables of thae class.
-   - The constructor is automatically executed when the object is created.
+ objects of that class.
+ - In Python we use __init__(self) as the name of the constructor.
+ - The main purpose is to initiazle the variables of thae class.
+ - The constructor is automatically executed when the object is created.
 __________________________________________________________________________________________
-   
-4) What is a method?
+ ) What is a method?
 And) Methods are the functions that perform specific actions on the object.
-   - Methods should be called explicitly using an object name of that class
+ - Methods should be called explicitly using an object name of that class
 __________________________________________________________________________________________
-   
-5) How many types of variables are there in OOP approach?
+ ) How many types of variables are there in OOP approach?
 Ans)  There are mainly 3 types:
-     - Instance variable:
-               The value of the variable changes from object to object
-               Variables that are defined inside the __init__ 
-     - Static variable
-               The value of the variable is not changing from object to object
-               It is accessed by using the name of the class
-               Also called class variable
-               
+ - Instance variable:
+ The value of the variable changes from object to object
+ Variables that are defined inside the __init__ 
+ - Static variable
+ The value of the variable is not changing from object to object
+ It is accessed by using the name of the class
+ Also called class variable
+ Memory efficient as no instance have to be created to call
+ Easy to access
+ DISADVANTAGE:
+ Problamatic in multithread environment
+ Inflexibility
+ 
           eg:
             class Emp:
                cName='TCS'
@@ -49,5 +53,162 @@ Ans)  There are mainly 3 types:
      - Local variable.
  __________________________________________________________________________________________
 
-6) What is the purpose of an Instance, and how to access it?
-7) What is the purpose of static variable?
+6) What are three types of methods in OOPs?
+Ans)    Instance Methods
+            - Objects used to set or get objects
+          
+        Static Methods-
+            -Static method is also bound to the class
+            -The method can't access or modify the class state
+            -No specific parameters are needed
+            -@staticmethod decorator is used to create a static method in python
+        Class Methods-
+            - @classmethod decorator is used to create a class method in python.
+            - It can modify a class state
+            - 
+
+__________________________________________________________________
+7) What is a final variable?
+A variable whose value does not change. It always refers to the same object by the property of non-transversity
+
+___________________________________________________________________
+8)What is Exception handling?
+Exception handling is an Object oriented prohramming way of managing the errors. 
+- It allows the errors to be thrown and caught and implements a centralized mechanism to solve it without causeing errors.
+___________________________________________________________________
+9) Drawbacks/ Limitations of OOPs?
+- Not suitable for smaller problems
+- Requires intensive testing
+- Takes more time to solve a problem
+- Requires proper planning
+- The programmer should think of solving the problems in terms of object
+_____________________________________________________________________
+9) What is the try or catch block?
+- It is used for handling exceptions.
+- Try block defines the set of statements that may lead to an error.
+- Catch block basically catches the exception
+______________________________________________________________________
+2. What is Object Oriented Programming?
+Object-Oriented Programming(OOPs) is a type of programming that is based on objects rather than just functions and procedures. Individual objects are grouped into classes. OOPs implements real-world entities like inheritance, polymorphism, hiding, etc into programming. It also allows binding data and code together.
+
+3. Why use OOPs?
+OOPs allows clarity in programming thereby allowing simplicity in solving complex problems
+Code can be reused through inheritance thereby reducing redundancy
+Data and code are bound together by encapsulation
+OOPs allows data hiding, therefore, private data is kept confidential
+Problems can be divided into different parts making it simple to solve
+The concept of polymorphism gives flexibility to the program by allowing the entities to have multiple forms
+ 
+
+4. What are the main features of OOPs?
+Inheritance
+Encapsulation
+Polymorphism
+Data Abstraction
+To know more about OOPs in JAVA, Python, and C++ you can go through the following blogs:
+
+ 
+JAVA OOPs Concepts
+Python OOPs Concepts
+C++ OOPs Concepts
+Classes and Objects OOPs Interview Questions and Answers
+5. What is an object?
+An object is a real-world entity which is the basic unit of OOPs for example chair, cat, dog, etc. Different objects have different states or attributes, and behaviors.
+
+6. What is a class?
+A class is a prototype that consists of objects in different states and with different behaviors. It has a number of methods that are common the objects present within that class.
+
+7. What is the difference between a class and a structure?
+Class: User-defined blueprint from which objects are created. It consists of methods or set of instructions that are to be performed on the objects.
+
+Structure: A structure is basically a user-defined collection of variables which are of different data types.
+
+8. Can you call the base class method without creating an instance?
+Yes, you can call the base class without instantiating it if:
+
+It is a static method
+The base class is inherited by some other subclass
+9. What is the difference between a class and an object?
+ 
+
+ 
+Object	Class
+A real-world entity which is an instance of a class	A class is basically a template or a blueprint within which objects can be created
+An object acts like a variable of the class	Binds methods and data together into a single unit
+An object is a physical entity	A class is a logical entity
+Objects take memory space when they are created	A class does not take memory space when created
+Objects can be declared as and when required	Classes are declared just once
+
+10. What is inheritance?
+Inheritance is a feature of OOPs which allows classes inherit common properties from other classes. For example, if there is a class such as ‘vehicle’, other classes like ‘car’, ‘bike’, etc can inherit common properties from the vehicle class. This property helps you get rid of redundant code thereby reducing the overall size of the code.
+
+11. What are the different types of inheritance?
+Single inheritance
+Multiple inheritance
+Multilevel inheritance
+Hierarchical inheritance
+Hybrid inheritance
+12. What is the difference between multiple and multilevel inheritance?
+Multiple Inheritance	Multilevel Inheritance
+Multiple inheritance comes into picture when a class inherits more than one base class	Multilevel inheritance means a class inherits from another class which itself is a subclass of some other base class
+Example: A class defining a child inherits from two base classes Mother and Father	Example: A class describing a sports car will inherit from a base class Car which inturn inherits another class Vehicle
+13. What is hybrid inheritance?
+Hybrid inheritance is a combination of multiple and multi-level inheritance.
+
+14. What is hierarchical inheritance?
+Hierarchical inheritance refers to inheritance where one base class has more than one subclasses. For example, the vehicle class can have ‘car’, ‘bike’, etc as its subclasses.
+
+15. What are the limitations of inheritance?
+Increases the time and effort required to execute a program as it requires jumping back and forth between different classes
+The parent class and the child class get tightly coupled
+Any modifications to the program would require changes both in the parent as well as the child class
+Needs careful implementation else would lead to incorrect results
+To know more about inheritance in Java and Python, read the below articles:
+
+Inheritance in Java
+Inheritance in Python
+16. What is a superclass?
+A superclass or base class is a class that acts as a parent to some other class or classes. For example, the Vehicle class is a superclass of class Car.
+
+ 
+17. What is a subclass?
+A class that inherits from another class is called the subclass. For example, the class Car is a subclass or a derived of Vehicle class.
+
+
+____________________________________________________________________________
+
+Polymorphism!
+- The ability to exist in multiple forms
+- It can be achieved through Method overriding and Method Overloading
+- Use the same method name we can perform different mechanisms.
+ For example, if you have a class named Vehicle, it can have a method named speed but you cannot define it because different vehicles have different speed.  
+_______
+ class Animal:
+    def speak(self):
+        print("The animal speaks")
+
+class Dog(Animal):
+    def speak(self):
+        print("The dog barks")
+
+class Cat(Animal):
+    def speak(self):
+        print("The cat meows")
+_____________
+
+Types of Polymorphism!
+	static Polymorphism/ Compile time polymorphism
+		- It is a type of polymorphism that occurs at the compile time.
+		- They are also called Compile time polymorphism.
+		- Overloading is an example of static polymorphism
+		- Operator overloading is an example
+	Dynamic Polymorphism
+		- Also called run time polymorphism
+		- Decisions are made at run- time
+		- Overriding is an example of dynamic polymorphism.
+		- Method overloading is an example.
+_____________
+
+
+
+
